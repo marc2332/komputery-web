@@ -3,44 +3,20 @@ import { element, routerBox, style,routerLink, render } from '@mkenzo_8/puffin'
 import Inici from './rutas/inici'
 import Contacte from './rutas/contacte'
 
+import Nav from './components/nav'
 
-const NavStyle = style`
-	& {
-		display: flex;
-		list-style-type: none;
-		padding: 15px;
-		justify-content: center;
+const AppStyle = style`
+	body {
+		--colorPrincipal: rgb(255,175,48);
+		margin: 0;
+		background: var(--colorPrincipal);
+		min-height: 100%;
+		overflow-y: scroll;
 	}
-
-	& > a {
-		margin: 1px;
-		padding: 7px;
-	}
-
-	& > a {
-		padding-bottom: 4px;
-		color: black;
-		text-decoration: none;
-		cursor: pointer;
-	}
-
-	& > a.active {
-		border-bottom: 2px solid black;
+	& * {
+		font-family: 'Inter', sans-serif;
 	}
 `
-
-function Nav(){
-	return element({
-		components:{
-			routerLink
-		}
-	})`
-		<nav class="${NavStyle}">
-			<routerLink to="/inici">Inici</routerLink>
-			<routerLink to="/contacte">Contacta'ns</routerLink>
-		</nav>
-	`
-}
 
 const App = element({
 	components:{
@@ -50,7 +26,7 @@ const App = element({
 		Contacte
 	}
 })`
-	<div>
+	<div class="${AppStyle}">
 		<Nav/>
 		<routerBox default="/inici">
 			<Inici from="/inici"/>

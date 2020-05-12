@@ -1,13 +1,4 @@
-body{
-	--colorPrincipal: rgb(255,175,48);
-	margin: 0;
-	background: var(--colorPrincipal);
-	min-height: 100%;
-	overflow-y: scroll;
-}
-* {
-	font-family: 'Inter', sans-serif;
-}
+
 
 
 .contingut {
@@ -24,7 +15,7 @@ body{
 }
 
 #headerInici{
-	background: url('image1.jpg') no-repeat;
+	background: url('images/image1.jpg') no-repeat;
 	background-size: 100% auto;
 	height: 500px;
 }
@@ -66,6 +57,7 @@ body{
 .link {
 	text-decoration: underline;
 	color: black;
+	cursor: pointer;
 }
 .link:hover {
 	color: rgb(40,40,40);

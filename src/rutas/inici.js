@@ -1,17 +1,21 @@
-import { element } from '@mkenzo_8/puffin'
+import { element, routerLink } from '@mkenzo_8/puffin'
 
 function Inici(){
-	return element`
+	return element({
+		components:{
+			routerLink
+		}
+	})`
 		<div class="contingut">
 			<div id="headerInici" href="header" class="seccio esq">
 				<div>
 					<h1>
-						Som Komputery
+						Komputery
 					</h1>
 					<p>
 						Experts en la informàtica
 					</p>
-					<a class="link" href="contacte.html">Contacta'ns -></a>
+					<routerLink class="link" to="/contacte">Contacta'ns </routerLink>
 				</div>
 			</div>
 			<div href="mig"  class="seccio seccio-mig">
