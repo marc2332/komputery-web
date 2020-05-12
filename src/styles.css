@@ -1,0 +1,92 @@
+body{
+	--colorPrincipal: rgb(255,175,48);
+	margin: 0;
+	background: var(--colorPrincipal);
+	min-height: 100%;
+	overflow-y: scroll;
+}
+* {
+	font-family: 'Inter', sans-serif;
+}
+
+
+.contingut {
+	padding: 0px 0px;
+}
+.contingut img {
+	max-width: 100%;
+}
+.contingut h1{
+	font-size: 75px;
+}
+.contingut  *:not(div) {
+	margin: 10px 20px;
+}
+
+#headerInici{
+	background: url('image1.jpg') no-repeat;
+	background-size: 100% auto;
+	height: 500px;
+}
+
+#headerInici *{
+	color:white;
+}
+
+.seccio{
+	max-width:100%;
+	height: auto;
+	padding: 30px;
+	display: flex;
+	justify-content: center;
+}
+
+.seccio.centre{
+	max-width: 50%;
+	margin: 0 auto;
+}
+
+.seccio.esq{
+	justify-content: start;
+}
+
+.seccio.drt{
+	justify-content: end;
+}
+
+.titol2{
+	text-align: center;
+	padding: 15px;
+}
+
+.contingut  > *:not(div) {
+	margin: 10px 20px;
+}
+
+.link {
+	text-decoration: underline;
+	color: black;
+}
+.link:hover {
+	color: rgb(40,40,40);
+}
+
+#headerInici .link:hover {
+	color: var(--colorPrincipal);
+}
+
+.recuadre{
+	padding: 15px 30px;
+	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
+	width: 300px;
+	background: rgba(0,0,0,0.2);
+	border: 0.5px solid rgba(40,40,40);
+	border-radius: 10px;
+	margin: 5px 100px;
+	min-height: 250px;
+}
+
+#footer{
+	background: rgb(50,50,50);
+	height: 200px;
+}
