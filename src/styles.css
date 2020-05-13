@@ -32,16 +32,19 @@
 	justify-content: center;
 }
 
-.seccio.centre{
-	max-width: 50%;
+.centre{
 	margin: 0 auto;
 }
 
-.seccio.esq{
+.esq{
+	min-width: 50%;
+	display: flex;
 	justify-content: start;
 }
 
-.seccio.drt{
+.drt{
+	min-width: 50%;
+	display: flex;
 	justify-content: end;
 }
 
@@ -65,17 +68,6 @@
 
 #headerInici .link:hover {
 	color: var(--colorPrincipal);
-}
-
-.recuadre{
-	padding: 15px 30px;
-	box-shadow: 0px 2px 5px rgba(0,0,0,0.2);
-	width: 300px;
-	background: rgba(0,0,0,0.2);
-	border: 0.5px solid rgba(40,40,40);
-	border-radius: 10px;
-	margin: 5px 100px;
-	min-height: 250px;
 }
 
 #footer{

@@ -1,9 +1,14 @@
 import { element, routerLink } from '@mkenzo_8/puffin'
 
+import Recuadre from '../components/recuadre'
+import Footer from '../components/Footer'
+
 function Inici(){
 	return element({
 		components:{
-			routerLink
+			routerLink,
+			Recuadre,
+			Footer
 		}
 	})`
 		<div class="contingut">
@@ -30,28 +35,17 @@ function Inici(){
 					</ul>
 				</div>
 			</div>
-			<div id="iso" class="seccio esq centre">
-				<div class="recuadre">
-					<h3 class="titol2">
-						Instal·lació sistemes operatius
-					</h3>
-					<p>
-						Nosaltres podem instal·larte el sistema operatiu que sigui en el ordinador que necessitis.
-					</p>
-				</div>
-			</div>
-			<div id="cs" class="seccio drt centre">
-				<div class="recuadre">
-					<h3 class="titol2">
-						Configuració de sistemes en Xarxa
-					</h3>
-					<p>
-						Nosaltres podem instal·larte el sistema operatiu que sigui en el ordinador que necessitis.
-					</p>
-				</div>
-			</div>
-			<div id="footer" class="seccio">
-			</div>
+			<Recuadre id="iso" data="${{
+				titol: 'Instal·lació sistemes operatius',
+				text: 'Nosaltres podem instal·larte el sistema operatiu que sigui en el ordinador que necessitis.',
+				clase: 'esq'
+			}}"/>
+			<Recuadre id="cs" data="${{
+				titol: 'Configuració de sistemes en Xarxa',
+				text: 'Nosaltres podem instal·larte el sistema operatiu que sigui en el ordinador que necessitis.',
+				clase: 'drt'
+			}}"/>
+			<Footer/>
 		</div>
 	`
 }
