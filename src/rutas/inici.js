@@ -1,7 +1,7 @@
 import { element, routerLink } from '@mkenzo_8/puffin'
 
 import Recuadre from '../components/recuadre'
-import Footer from '../components/Footer'
+import Footer from '../components/footer'
 
 function Inici(){
 	return element({
