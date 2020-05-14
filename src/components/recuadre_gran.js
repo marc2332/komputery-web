@@ -19,7 +19,7 @@ function RecuadreGran({ data }){
 		}
 	})`
 		<div class="${RecuadreStyle} seccio centre">
-			<div class="${data.clase}">
+			<div class="ctr">
 				<div class="rect">
 					<h3 class="titol2">
 						${data.titol}

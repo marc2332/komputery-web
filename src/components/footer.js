@@ -26,7 +26,7 @@ function Footer({ data }){
 		<div id="footer" class="${FooterStyle} seccio">
 			<div>
 				<ul>
-					<li><routerLink group="nav" to="/contacte">Contacta'ns</routerLink></li>
+					<li><routerLink group="nav" :click="${scrollTop}" to="/contacte">Contacta'ns</routerLink></li>
 					<li><a :click="${scrollTop}">Tornar a dalt</a></li>
 				</ul>
 			</div>

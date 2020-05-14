@@ -36,6 +36,12 @@
 	margin: 0 auto;
 }
 
+.ctr{
+	min-width: 50%;
+	display: flex;
+	justify-content: center;
+}
+
 .esq{
 	min-width: 50%;
 	display: flex;
