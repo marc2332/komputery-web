@@ -28,7 +28,7 @@ const App = element({
 })`
 	<div class="${AppStyle}">
 		<Nav/>
-		<routerBox default="/inici">
+		<routerBox group="nav" default="/inici">
 			<Inici from="/inici"/>
 			<Contacte from="/contacte"/>
 		</routerBox>

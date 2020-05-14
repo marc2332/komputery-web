@@ -20,7 +20,7 @@ function Inici(){
 					<p>
 						Experts en la informàtica
 					</p>
-					<routerLink class="link" to="/contacte">Contacta'ns </routerLink>
+					<routerLink class="link" group="nav" to="/contacte">Contacta'ns </routerLink>
 				</div>
 			</div>
 			<div href="mig"  class="seccio seccio-mig">
