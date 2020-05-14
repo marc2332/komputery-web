@@ -15,10 +15,10 @@ const ButtonStyle = style`
 	}
 `
 
-function Button(){
+function Button2(){
 	return element`
-		<input type="submit" class="${ButtonStyle}"/>
+		<button type="submit" class="${ButtonStyle}"/>
 	`
 }
 
-export default Button
+export default Button2
