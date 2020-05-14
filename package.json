@@ -7,12 +7,11 @@
 		"build": "parcel build src/index.html"
 	},
 	"dependencies": {
-		"@mkenzo_8/puffin": "^0.8.3",
-		"components": "^0.1.0",
-		"parcel-plugin-static-files-copy": "^2.3.1"
+		"@mkenzo_8/puffin": "^0.8.4"
 	},
 	"devDependencies": {
-		"parcel": "^1.12.4"
+		"parcel": "^1.12.4",
+		"parcel-plugin-static-files-copy": "^2.3.1"
 	},
 	"staticFiles": {
 		"staticPath": "static",
