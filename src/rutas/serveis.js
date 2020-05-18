@@ -24,7 +24,7 @@ const IniciStyle = style`
 	}
 `
 
-function Inici(){
+function Serveis(){
 	return element({
 		components:{
 			routerLink,
@@ -59,4 +59,4 @@ function Inici(){
 	`
 }
 
-export default Inici
+export default Serveis
