@@ -3,6 +3,7 @@ import { element, routerBox, style,routerLink, render } from '@mkenzo_8/puffin'
 import Inici from './rutas/inici'
 import Contacte from './rutas/contacte'
 import Serveis from './rutas/serveis'
+import Departaments from './rutas/departaments'
 import Footer from './components/footer'
 
 import Nav from './components/nav'
@@ -27,7 +28,8 @@ const App = element({
 		Inici,
 		Contacte,
 		Footer,
-		Serveis
+		Serveis,
+		Departaments
 	}
 })`
 	<div class="${AppStyle}">
@@ -36,6 +38,7 @@ const App = element({
 			<Inici from="/inici"/>
 			<Contacte from="/contacte"/>
 			<Serveis from="/serveis"/>
+			<Departaments from="/departaments"/>
 		</routerBox>
 		<Footer/>
 	</div>

@@ -1,4 +1,4 @@
-import { element, style } from '@mkenzo_8/puffin'
+import { element, style, routerBox, routerLink } from '@mkenzo_8/puffin'
 
 import InputButton from '../components/button'
 
@@ -28,7 +28,9 @@ const ContacteStyle = style`
 function Contacte(){
 	return element({
 		components:{
-			InputButton
+			InputButton,
+			routerLink,
+			routerBox
 		}
 	})`
 		<div class="${ContacteStyle} contingut">
@@ -37,13 +39,6 @@ function Contacte(){
 					<h1>
 						Contacta'ns
 					</h1>
-					<ul>
-						<li>Marc Espín <a href="mailto:marcespin@komputery.rubi">marcespin@komputery.rubi</a></li>
-						<li>Francisco José <a href="mailto:franciscojose@komputery.rubi">franciscojose@komputery.rubi</a></li>
-						<li>Julia Garcia <a href="mailto:juliagarcia@komputery.rubi">juliagarcia@komputery.rubi</a></li>
-						<li>Paula De Rojas <a href="mailto:pauladerojas@komputery.rubi">pauladerojas@komputery.rubi</a></li>
-						<li>Arnau Carreras <a href="mailto:arnaucarreras@komputery.rubi">arnaucarreras@komputery.rubi</a></li>
-					</ul>
 					<h2>Envia'ns un correu</h2>
 					<form action="mailto:marcespin@komputery.rubi?subject=Missatge de client." method="post" enctype="text/plain">
 						<p>Nom: </p>

@@ -6,7 +6,10 @@ import Windows from '../images/windows.png'
 import Xarxa from '../images/xarxa.jpg'
 import Server from '../images/server.jpg'
 
-const IniciStyle = style`
+const ServeisStyle = style`
+	& * {
+		text-align: center;
+	}
 	& > div{
 		margin: 25px;
 		padding: 40px;
@@ -32,7 +35,10 @@ function Serveis(){
 			routerBox
 		}
 	})`
-		<div class="${IniciStyle} contingut">
+		<div class="${ServeisStyle} contingut">
+			<h1>
+				Serveis
+			</h1>
 			<nav>
 				<routerLink group="serveis" to="/serveis/iso">Sistemes Operatius</routerLink>
 				<routerLink group="serveis" to="/serveis/cs">Xarxes</routerLink>

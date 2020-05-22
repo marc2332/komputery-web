@@ -35,6 +35,7 @@ function Nav(){
 			<routerLink group="nav" to="/inici">Inici</routerLink>
 			<routerLink group="nav" to="/contacte">Contacta'ns</routerLink>
 			<routerLink group="nav" to="/serveis">Serveis</routerLink>
+			<routerLink group="nav" to="/departaments">Departaments</routerLink>
 		</nav>
 	`
 }
