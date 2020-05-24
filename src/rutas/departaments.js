@@ -2,10 +2,11 @@ import { element, style, routerBox, routerLink } from '@mkenzo_8/puffin'
 
 import InputButton from '../components/button'
 
-const ContacteStyle = style`
+const DepartamentStyle = style`
 	&  ul{
 		padding: 10px;
 		margin: 35px 0;
+		list-style: none;
 	}
 	& input, & textarea {
 		padding: 10px;
@@ -40,7 +41,7 @@ const ContacteStyle = style`
 	}
 `
 
-function Contacte(){
+function Departaments(){
 	return element({
 		components:{
 			InputButton,
@@ -48,7 +49,7 @@ function Contacte(){
 			routerBox
 		}
 	})`
-		<div class="${ContacteStyle} contingut">
+		<div class="${DepartamentStyle} contingut">
 			<h1>
 				Departaments
 			</h1>
@@ -82,4 +83,4 @@ function Contacte(){
 	`
 }
 
-export default Contacte
+export default Departaments

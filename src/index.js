@@ -21,7 +21,7 @@ const AppStyle = style`
 	}
 `
 
-const App = element({
+const Padre = element({
 	components:{
 		routerBox,
 		Nav,
@@ -44,4 +44,7 @@ const App = element({
 	</div>
 `
 
-render(App,document.body)
+render(Padre,document.body)
+
+
+
